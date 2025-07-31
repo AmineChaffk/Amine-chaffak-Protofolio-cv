@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protofolio | Amine cheffek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick= hideSidebar()><a href=""><img src="img/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="img-header"></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><img src="img/logo.png" alt="" class="logo"></a></li>
+            <li class="hideOnMobile"><a href="#home">Home</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#service">services</a></li>
+            <li onclick= showSidebar()><a href="#"><img src="img/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="img-header"></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar =document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar =document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+            event.preventDefault();
+        }
+    </script>
+    <a href="https://wa.me/212688122680" target="_blank" class="number">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <section id="home">
+        <div class="box-text">
+            <img src="img/logo.png" class="logo">
+            <h1>Hi, I am</h1>
+            <div class="container">
+                <p class="text">Amine Cheffak</p>
+            </div>
+            <h2 class="text2">I am a freelance frond-end developer</h2>
+            <a href="https://www.fiverr.com/aminecheffak" target="_blank" class="button-fiverr">Fiverr</a>
+        </div>
+    </section>
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="box-about">
+            <div class="box-text-about">
+                <p>
+                    Hi!<br>
+                    I'm Amine, an 18-year-old web developer from Morocco.<br>
+                    I specialize in building modern and responsive web pages<br>
+                    clean code and user-friendly designs to ensure a great<br>
+                    experience for every visitor.I'm here to provide professional and reliable service.
+                </p>
+                <div class="skills">
+                    <i class="fa-brands fa-html5" id="html"> Html</i>
+                    <i class="fa-brands fa-css3-alt" id="css"> Css</i>
+                    <i class="fa-brands fa-square-js" id="js"> JavaScript</i>
+                    <i class="fa-brands fa-bootstrap" id="Bootstrap"> Bootstrap</i>
+                    <i class="fa-brands fa-python" id="python"> Python</i>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="img/photo.jpeg" alt="" class="">
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <h1>Services</h1>
+        
+        <div class="box-service">
+            <div class="boxs">
+                <i class="fa-solid fa-code"></i>
+                <h2>Code</h2>
+                <h4>Web Developer</h4>
+            </div>
+            <div class="boxs">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>Repair</h2>
+                <h4>Electronics Repair</h4>
+            </div>
+            <div class="boxs">
+                <i class="fa-solid fa-video"></i>
+                <h2>video Editing</h2>
+                <h4>Professional Editing</h4>
+            </div>
+        </div>
+    </section>
+    <script src="contact.js"></script>
+</body>
+</html>
