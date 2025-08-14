@@ -257,21 +257,33 @@ section about us
     align-content: center;
     border-radius: 15px;
 }
+#git{
+    color: white;
+    border: 1px white solid;
+    width: 100px;
+    height: 40px;
+    align-content: center;
+    border-radius: 15px;
+}
 #html:hover{
-    color: rgb(255, 98, 0);
-    border: rgb(255, 98, 0) 1px solid;
+    color: #E34F26;
+    border: #E34F26 1px solid;
 }
 #css:hover{
-    color: rgb(26, 26, 230);
-    border: rgb(26, 26, 230) 1px solid;
+    color: #1572B6;
+    border: #1572B6 1px solid;
 }
 #js:hover{
-    color: yellow;
-    border: 1px solid yellow;
+    color: #F7DF1E;
+    border: 1px solid #F7DF1E;
 }
 #Bootstrap:hover{
-    color: rgb(88, 19, 238);
-    border: 1px solid rgb(88, 19, 238);
+    color: #7952B3;
+    border: 1px solid #7952B3;
+}
+#git:hover{
+    color: #d13f24;
+    border: 1px solid #d13f24;
 }
 .skills{
     display: flex;
@@ -279,8 +291,8 @@ section about us
     padding-top: 30px;
 }
 #python:hover{
-    color: blue;
-    border: 1px solid blue;
+    color: #306998;
+    border: 1px solid #306998;
 }
 
 #service{
